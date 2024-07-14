@@ -26,17 +26,17 @@ The imports below refer to these ``pip``-installable packages on PyPI:
 
 ::
 
-    import future        # pip install future
-    import builtins      # pip install future
-    import past          # pip install future
-    import six           # pip install six
+    import future        # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future
+    import builtins      # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future
+    import past          # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future
+    import six           # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' six
 
 The following scripts are also ``pip``-installable:
 
 ::
 
-    futurize             # pip install future
-    pasteurize           # pip install future
+    futurize             # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future
+    pasteurize           # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future
 
 See http://python-future.org and https://pythonhosted.org/six/ for more
 information.
@@ -393,7 +393,7 @@ basestring
     assert (isinstance(a, basestring) and isinstance(b, basestring))
 
     # Python 2 and 3: alternative 1
-    from past.builtins import basestring    # pip install future
+    from past.builtins import basestring    # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future
 
     a = u'abc'
     b = b'def'
@@ -1214,7 +1214,7 @@ http module
     import SimpleHTTPServer
     import CGIHttpServer
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     import http.client
     import http.cookies
     import http.cookiejar
@@ -1228,14 +1228,14 @@ xmlrpc module
     import DocXMLRPCServer
     import SimpleXMLRPCServer
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     import xmlrpc.server
 .. code:: python
 
     # Python 2 only:
     import xmlrpclib
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     import xmlrpc.client
 html escaping and entities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1245,13 +1245,13 @@ html escaping and entities
     # Python 2 and 3:
     from cgi import escape
 
-    # Safer (Python 2 and 3, after ``pip install future``):
+    # Safer (Python 2 and 3, after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     from html import escape
 
     # Python 2 only:
     from htmlentitydefs import codepoint2name, entitydefs, name2codepoint
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     from html.entities import codepoint2name, entitydefs, name2codepoint
 html parsing
 ~~~~~~~~~~~~
@@ -1261,7 +1261,7 @@ html parsing
     # Python 2 only:
     from HTMLParser import HTMLParser
 
-    # Python 2 and 3 (after ``pip install future``)
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``)
     from html.parser import HTMLParser
 
     # Python 2 and 3 (alternative 2):
@@ -1345,7 +1345,7 @@ Tkinter
     import tkSimpleDialog
     import ttk
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     import tkinter
     import tkinter.dialog
     import tkinter.filedialog
@@ -1369,7 +1369,7 @@ socketserver
     # Python 2 only:
     import SocketServer
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     import socketserver
 copy\_reg, copyreg
 ~~~~~~~~~~~~~~~~~~
@@ -1379,7 +1379,7 @@ copy\_reg, copyreg
     # Python 2 only:
     import copy_reg
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     import copyreg
 configparser
 ~~~~~~~~~~~~
@@ -1389,7 +1389,7 @@ configparser
     # Python 2 only:
     from ConfigParser import ConfigParser
 
-    # Python 2 and 3 (after ``pip install configparser``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' configparser``):
     from configparser import ConfigParser
 queue
 ~~~~~
@@ -1399,7 +1399,7 @@ queue
     # Python 2 only:
     from Queue import Queue, heapq, deque
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     from queue import Queue, heapq, deque
 repr, reprlib
 ~~~~~~~~~~~~~
@@ -1409,7 +1409,7 @@ repr, reprlib
     # Python 2 only:
     from repr import aRepr, repr
 
-    # Python 2 and 3 (after ``pip install future``):
+    # Python 2 and 3 (after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future``):
     from reprlib import aRepr, repr
 UserDict, UserList, UserString
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

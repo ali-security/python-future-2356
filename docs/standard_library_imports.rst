@@ -148,12 +148,12 @@ External standard-library backports
 Backports of the following modules from the Python 3.x standard library are
 available independently of the python-future project::
 
-    import enum                       # pip install enum34
-    import singledispatch             # pip install singledispatch
-    import pathlib                    # pip install pathlib
+    import enum                       # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' enum34
+    import singledispatch             # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' singledispatch
+    import pathlib                    # pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' pathlib
 
 A few modules from Python 3.4 are also available in the ``backports``
-package namespace after ``pip install backports.lzma`` etc.::
+package namespace after ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' backports.lzma`` etc.::
 
     from backports import lzma
     from backports import functools_lru_cache as lru_cache

@@ -82,7 +82,7 @@ This release removes the ``configparser`` package as an alias for
 various compatibility issues. (Issues #118, #181)
 
 If your code previously relied on ``configparser`` being supplied by
-``python-future``, the recommended upgrade path is to run ``pip install
+``python-future``, the recommended upgrade path is to run ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/'
 configparser`` or add ``configparser`` to your ``requirements.txt`` file.
 
 Note that, if you are upgrading ``future`` with ``pip``, you may need to

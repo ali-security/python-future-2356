@@ -33,7 +33,7 @@ Note also that the ``configparser`` module is a special case; there is a full
 backport available on PyPI (https://pypi.org/project/configparser/), so, as
 of v0.16.0, ``python-future`` no longer provides a ``configparser`` package
 alias. To use the resulting code on Py2, install the ``configparser`` backport
-with ``pip install configparser`` or by adding it to your ``requirements.txt``
+with ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' configparser`` or by adding it to your ``requirements.txt``
 file.
 
 ``pasteurize`` also handles the following Python 3 features:

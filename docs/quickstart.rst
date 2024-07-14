@@ -14,7 +14,7 @@ Installation
 
 To install the latest stable version, type::
 
-    pip install future
+    pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future
 
 If you would prefer the latest development version, it is available `here
 <https://github.com/PythonCharmers/python-future>`_.

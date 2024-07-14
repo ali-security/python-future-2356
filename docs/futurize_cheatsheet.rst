@@ -28,7 +28,7 @@ The goal for this step is to modernize the Python 2 code without introducing any
 
 **1a**. Install ``future`` into the virtualenv using::
 
-          pip install future
+          pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future
 
 **1b**. Run ``futurize --stage1 -w *.py subdir1/*.py subdir2/*.py``. Note that with
 recursive globbing in ``bash`` or ``zsh``, you can apply stage 1 to all source files

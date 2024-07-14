@@ -780,7 +780,7 @@ Bugfixes
 --------
 - Fixed ``newint.__divmod__``
 - Improved robustness of installing and removing import hooks in :mod:`future.standard_library`
-- v0.10.1: Fixed broken ``pip install future`` on Py3
+- v0.10.1: Fixed broken ``pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' future`` on Py3
 
 
 .. _whats-new-0.9:
@@ -855,11 +855,11 @@ Python 2.6 support
 
 To run the ``future`` test suite on Python 2.6, this additional package is needed::
 
-    pip install unittest2
+    pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' unittest2
 
 ``http.server`` also requires the ``argparse`` package::
 
-    pip install argparse
+    pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' argparse
 
 
 Unused modules removed
