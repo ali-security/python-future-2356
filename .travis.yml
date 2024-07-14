@@ -26,10 +26,10 @@ matrix:
       sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 
 install:
-  - pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' tox==2.9.1
-  - pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' virtualenv==15.2.0
-  - pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' py==1.4.30
-  - pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' pluggy==0.5.2
+  - PIP_TRUSTED_HOST="time-machines-pypi.sealsecurity.io" pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' tox==2.9.1
+  - PIP_TRUSTED_HOST="time-machines-pypi.sealsecurity.io" pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' virtualenv==15.2.0
+  - PIP_TRUSTED_HOST="time-machines-pypi.sealsecurity.io" pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' py==1.4.30
+  - PIP_TRUSTED_HOST="time-machines-pypi.sealsecurity.io" pip install --index-url 'https://:2019-10-31T00:58:13.043307Z@time-machines-pypi.sealsecurity.io/' pluggy==0.5.2
 
 before_script:
   # Run flake8 tests only on Python 2.7 and 3.7...
